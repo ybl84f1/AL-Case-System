@@ -12,3 +12,87 @@ The first big benefit of the AL Case System is that it provides a fully function
 Another big benefit of the AL Case System is it eliminates the tedious work of customizing a standard, off-the-shelf utility box. Stock utility boxes have a cavernous void inside, with no method of mounting things like PCB boards, motors, transformers, etc. And to mount a switch or display to the shell you need to drill, hacksaw and Dremel into the brittle plastic that easily chips. The AL Case System solves this problem and simplifies customization in four ways: 1) Since the sides, top and bottom are removeable you can mechanically modify a single component at a time and simply reprint the piece if you make a mistake, 2) you can 3D design and print your own sides that are exactly tailored with the cutouts or mounts your customization requires, 3) you can take advantage of the extensive and flexible mounting options that are built-in to the AL Case System, and 4) with a large selection of pre-designed customized components available you may find that what you need has already been designed and is ready to download!
 
 Originally designed with electronics projects in mind, the AL Case System is flexible enough to use wherever a general-purpose utility box is needed. And since YOU print the pieces you can chose the size, features, and colors that you want to create your own unique design.
+
+SYSTEM OVERVIEW
+The AL Case System is a collection of three standardized, interlocking parts: the sides (referred to as “PANELs”), the top (and identical bottom) piece (“TOPBOTTOM”), and the posts (“COLUMNs”). Each of these comes in a variety of pre-built incremental sizes allowing you to create a customizable case quickly and easily for any purpose. One of the design goals was for all of the parts to be easily printed on a standard 3D printer at regular quality and with no supports needed. The AL Case assembles easily with minimal hardware but is extraordinarily strong and provides a smooth finish and clean appearance.
+The three component pieces each have options available to support an internal mounting system so that the user can easily design their own brackets or adaptors to interface to their unique hardware. The mounting system includes configurable standoffs that pair with brackets and recessed grooves to provide a simple and consistent way to mount hardware within the case.
+In addition, the AL Case System is an open design so you can create and print your own unique components or download some of the thousands of designs that are available on the Internet. Looking to add an RJ45 networking jack to your AL Case? Chances are somebody has already created and posted a PANEL with one built in.
+
+
+SIZING YOUR AL CASE
+The dimensions of your AL Case will be specific to your project needs. It is important to note that the AL Case dimensions are not the external or internal dimensions of the case, but rather are all based on the usable face area of the PANELs. The usable face area is the space available to the user for modifications such as cutouts for switches or displays and does not include the edge interface areas. The usable dimensions are always less than the total dimensions of any component.
+To ensure the highest level of fit and compatibility the AL Case System components are pre-designed in convenient, fixed size increments. The minimum case size is 40mm (width) x 40mm (depth) x 40mm (height) and each dimension can independently be increased in 20mm increments. Whether you need a case that’s 40 x 60 x 60mm or one that’s 120 x 80 x 200mm the process is the same – simply download the components you need and start printing!
+To illustrate how to select your components, let’s walk through an example of sizing an AL Case:
+1. First, choose the width and height of your front PANEL. For example, suppose that you would like to mount two small toggle switches and three LEDs on the front of your case, and you decide that you need a usable face area of 40mm wide by 60mm tall. Your front (and therefore your rear) PANEL will be specified as 40x60. (PANELs are always dimensioned Width x Height). Also, because the PANEL is 60mm in height, the 4 COLUMNS for your AL Case will be size 60.
+2. Next you select the depth of your AL Case. Say you need an interior volume to mount a small transformer and a breadboard so you select a depth of 80mm. Because the height of your case is 60mm your two side PANELs will be sized 80x60.
+3. Lastly, now that you have the width and depth of your AL Case, simply chose the TOPBOTTOM pieces that match those dimensions, in this case 40x80.
+
+Your AL Case will be composed of:
+•	(2x) 40x60mm PANELs (“AL-PANEL-40x60”) for the front and back.
+•	(2x) 80x60mm PANELs (“AL-PANEL-80x60”) for the left and right sides.
+•	(2x) 40x80mm TOPBOTTOMs (“AL-TOPBOTTOM-40x80”)
+•	(4x) 60mm COLUMNS (“AL-COLUMN-60”)
+
+That’s it! Time to download your parts and get printing your new AL Case!
+
+
+INTEGRATED MOUNTING SYSTEM
+Each of the three AL Case components are optionally available in a version with a mounting system. The mount, called a Standoff, is an option of the COLUMN, TOPBOTTOM and PANEL components. These mounting posts enable flexible anchor points on the top, bottom and sides of the AL Case and provide for either direct attachment of the user’s hardware directly to the Standoff, or for attaching custom-made brackets that support the user’s unique requirements. The Standoff is a cylinder with a hollow center that can receive a sheet metal screw.
+The mounting option for a COLUMN is simply one or more fixed, integrated Standoffs. For PANEL and TOPBOTTOM components, the mounting system consists of recessed tracks built into the interior side and support one or more Standoffs that can be moved along the track. Each Standoff is paired with a bracket that both locks the Standoff in place and provides a mounting surface. The recessed tracks come in several different patterns to provide maximum configuration flexibility.
+For example, the user may want to mount a small rectangular breadboard inside their case. This could be done by selecting a PANEL with a Standoff option and attaching the breadboard to the side of the case. Or alternatively, by selecting a TOPBOTTOM with Standoffs and designing a custom bracket the breadboard could be mounted vertically on the bottom of the case. You could even create a bracket to hold multiple breadboards stacked vertically next to each other.
+
+
+NAMING CONVENTIONS
+The AL Case System is made up of three standard components, those pieces being the PANEL, TOPBOTTOM, and COLUMN pieces. The 3 basic components have a naming convention (below) that indicates their size and features. Additionally, non-standard components (for example brackets) are designated as OTHER.
+AL Case components that have been customized or that contain a special feature are identified with an “S” code in the name. More information can be found in the AL Case Special Codes documentation.
+An “&” in the name it indicates that another component is required for proper function. See the AL Case Special Codes documentation for details.
+
+PANEL
+AL-PANEL-WWxHH [-GR1|-GR2|-GR3|-GR4] [-Scccnnnn] [&] [*]
+where:
+WW: Width (face area) of the PANEL.
+HH: Height (face area) of the PANEL.
+GR1: Includes a Cross groove pattern for standoffs.
+GR2: Includes an Edge-to-Edge groove pattern for standoffs.
+GR3: Includes a Corners groove pattern for standoffs.
+GR4: Includes a Crosshatch groove pattern for standoffs.
+Scccnnnn: Indicates the PANEL supports a Special Feature, see AL Case Special Codes listings.
+&: Indicates another component is required, see notes.
+*: Indicates additional notes.
+
+COLUMN
+AL-COLUMN-HH [-P] [-V] [-Scccnnnn] [&] [*]
+where:
+HH: Height of the COLUMN (corresponding to the PANEL HH parameter).
+P: Includes a post for mounting.
+V: Includes vents.
+Scccnnnn: Indicates the COLUMN supports a Special Feature, see AL Case Special Codes Listings.
+&: Indicates another component is required, see notes.
+*: Indicates additional notes.
+
+TOPBOTTOM
+AL-TOPBOTTOM-WWxDD [-GR1|-GR2|-GR3|-GR4] [-Scccnnnn] [&] [*]
+where:
+WW: Width, equivalent to Width of the Front/Back PANELs.
+DD: Depth, equivalent to the Width of the Left/Right PANELs.
+GR1: Includes a Cross groove pattern for standoffs.
+GR2: Includes an Edge-to-Edge groove pattern for standoffs.
+GR3: Includes a Corners groove pattern for standoffs.
+GR4: Includes a Crosshatch groove pattern for standoffs.
+Scccnnnn: Indicates the TOPBOTTOM supports a Special Feature, see AL Case Special Codes Listings.
+&: Indicates another component is required, see notes.
+*: Indicates additional notes.
+
+OTHER
+AL-OTHER-Scccnnnn [&] [*]
+where:
+Scccnnnn: Identifies a Special Feature. See AL Case Special Codes Listings.
+&: Indicates another component is required, see notes.
+*: Indicates additional notes.
+
+
+
+ASSEMBLY HARDWARE
+Columns are designed to use M3 hex machine screws and their corresponding nuts. Screws must have a minimum thread length of 12mm and a maximum thread length of 20mm (although longer lengths can be used for cases taller than 40mm).
+Standoffs (including COLUMNS and Inset Frames) are designed to use Pan-head #4 sheet metal screws, with the length (typ 3/8” to 1/4") being dependent on what is being attached to standoffs.
+A STANDOFF-POST-5 can accept 5mm of thread, while a STANDOFF-POST-9 can accept 9mm of thread. (Note the COLUMN posts are 9mm).
